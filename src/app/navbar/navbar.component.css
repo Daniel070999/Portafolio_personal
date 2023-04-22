@@ -1,0 +1,10 @@
+.navbar-transparent {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .navbar-solid {
+    background-color: #fff;
+    transition: background-color 0.5s ease-in-out;
+  }
+  

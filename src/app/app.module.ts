@@ -1,16 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomePortafolioComponent } from './home-portafolio/home-portafolio.component';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { DescriptionComponent } from './description/description.component';
+import { NavbarComponent } from './navbar/navbar.component'; 
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePortafolioComponent,
+    AboutMeComponent,
+    ProjectsComponent,
+    DescriptionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    NgbModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+.hero {
+    background-image: url('https://images4.alphacoders.com/587/587777.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+  }
