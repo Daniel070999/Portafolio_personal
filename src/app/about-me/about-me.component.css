@@ -1,33 +1,33 @@
 #about {
-    text-align: center;
-  }
+  text-align: center;
   
-  #about h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  #about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
-  }
-  
-  #about .btn-primary {
-    background-color: #2255a4;
-    border-color: #2255a4;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  #about .btn-primary:hover {
-    background-color: #fff;
-    border-color: #2255a4;
-    color: #2255a4;
-  }
-  
-  #about img {
-    max-width: 100%;
-  }
-  
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+#about .btn-primary {
+  background-color: #2255a4;
+  border-color: #2255a4;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#about .btn-primary:hover {
+  background-color: #fff;
+  border-color: #2255a4;
+  color: #2255a4;
+}
+
+#about img {
+  max-width: 100%;
+}

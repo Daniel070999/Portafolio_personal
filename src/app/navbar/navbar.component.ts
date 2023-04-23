@@ -19,5 +19,7 @@ export class NavbarComponent implements OnInit {
         this.navbar.classList.add('navbar-transparent');
       }
     });
+
   }
+
 }

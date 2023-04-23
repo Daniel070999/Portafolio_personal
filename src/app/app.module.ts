@@ -7,7 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { DescriptionComponent } from './description/description.component';
-import { NavbarComponent } from './navbar/navbar.component'; 
+import { NavbarComponent } from './navbar/navbar.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component'; 
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AboutMeComponent,
     ProjectsComponent,
     DescriptionComponent,
-    NavbarComponent
+    NavbarComponent,
+    SplashScreenComponent
   ],
   imports: [
     BrowserModule,
