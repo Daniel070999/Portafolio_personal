@@ -9,7 +9,13 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DescriptionComponent } from './description/description.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component'; 
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: '', component: HomePortafolioComponent },
+  { path: 'aboutme', component: AboutMeComponent },
+  { path: 'projects', component: ProjectsComponent }
+]
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot(appRoutes)
     
   ],
   providers: [],

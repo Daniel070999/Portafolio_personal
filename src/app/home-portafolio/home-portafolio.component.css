@@ -1,17 +1,20 @@
+
 .section {
     opacity: 0;
-    transform: translateX(-50%);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(-50%);
+    transition: opacity 1s ease-in-out, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .section.animated {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+    animation: ease-in-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 
 .fade-in {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1s bounce-in-top;
 }
 
 .fade-in.animated {
@@ -19,8 +22,8 @@
 }
 
 .slide-in {
-    transform: translateY(100px);
-    transition: transform 2s ease-in-out;
+    transform: translateY(150px);
+    transition: transform 1s bounce-in-top;
 }
 
 .slide-in.animated {
