@@ -1,0 +1,47 @@
+<section class="contact-container">
+
+    <div class="social-links">
+        <div class="social-buttons">
+            <div class="social-buttons-container">
+                <a href="#" class="button linkedin">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="#" class="button facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="button twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="button instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+
+        <div class="hero-content">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name" [class.error]="formSubmitted && !name">Name:</label>
+                <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+                <label for="subject" [class.error]="formSubmitted && !subject">Subject:</label>
+                <input type="text" id="name1" name="subject" [(ngModel)]="subject" required>
+
+                <label for="message" [class.error]="formSubmitted && !message">Message:</label>
+                <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+
+                <button (click)="enviar()" name="enviar">Send</button>
+                <p *ngIf="formSubmitted && (!name || !subject || !message)" class="error-message">Please fill in all
+                    required fields.</p>
+            </form>
+
+        </div>
+    </div>
+</section>

@@ -10,6 +10,7 @@ import { DescriptionComponent } from './description/description.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component'; 
 import { RouterModule, Routes } from '@angular/router';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePortafolioComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     ProjectsComponent,
     DescriptionComponent,
     NavbarComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
