@@ -36,8 +36,9 @@
 
                 <label for="message" [class.error]="formSubmitted && !message">Message:</label>
                 <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
-
-                <button (click)="enviar()" name="enviar">Send</button>
+                <div class="contact-button">
+                    <a type="button" (click)="enviar()" name="enviar">Send</a>
+                </div>
                 <p *ngIf="formSubmitted && (!name || !subject || !message)" class="error-message">Please fill in all
                     required fields.</p>
             </form>

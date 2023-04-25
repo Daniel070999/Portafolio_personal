@@ -9,9 +9,10 @@
     height: 100%;
 }
 
-@media screen and (max-width: 767px) {
+
+@media (max-width: 768px) {
     .contact-container {
-        background-size: contain;
+        background-image: url('https://i.pinimg.com/originals/35/12/20/35122059c3e877984bde3ff69467bb31.jpg');
     }
 }
 
@@ -49,8 +50,8 @@
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
-    background-color: #2C3E50;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
     width: 100%;
 }
 
@@ -79,8 +80,6 @@
     align-items: center;
     padding: 3rem;
 }
-
-
 
 .social-links i {
     font-size: 1.2rem;
@@ -132,12 +131,62 @@
         padding: 1.5rem;
     }
 
-
-
-
     .button {
         margin: 10px 0;
     }
+}
+
+.contact-button {
+    position: relative;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.contact-button a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .contact-button {
+        bottom: 10%;
+    }
+
+    .contact-button a {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-button {
+        bottom: 15%;
+    }
+
+    .contact-button a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .social-buttons-container a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+.contact-button a:hover {
+    background-color: white;
+    color: black;
 }
 
 .error-message {
@@ -196,7 +245,7 @@
 }
 
 .facebook:hover {
-    background-color: #0077B5;
+    background-color: #1877f2;
     color: white;
 }
 
@@ -206,7 +255,7 @@
 }
 
 .instagram:hover {
-    background-color: #e1306c;
+    background-image: linear-gradient(to bottom right, #ff000d, #ecb22e);
     color: white;
 }
 
