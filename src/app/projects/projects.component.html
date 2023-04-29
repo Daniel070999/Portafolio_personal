@@ -27,7 +27,7 @@
         <div class="project-container">
           <a *ngFor="let project of projects">
             <div class="col-lg-3 col-md-8 project-grid-item all {{project.type}}">
-              <a class="popup-img project-item">
+              <a class="popup-img project-item"  data-aos="flip-right">
                 <img [src]="project.img" alt="img">
                 <div class="project-img-overlay">
                   <div class="project-content">

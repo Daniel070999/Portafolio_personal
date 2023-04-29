@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as Aos from 'aos';
 import * as Isotope from 'isotope-layout';
 
 @Component({
@@ -34,8 +35,7 @@ export class ProjectsComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-
-
+    Aos.init();
     $(window).on('load', function () {
       var projectIsotope = $('.project-container').isotope({
         itemSelector: '.project-grid-item'
