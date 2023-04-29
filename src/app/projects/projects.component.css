@@ -2,6 +2,13 @@
     position: relative;
     justify-content: center;
     place-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    padding: 30px;
 }
 
 #project .project-list {
@@ -27,7 +34,7 @@
     margin: 0 15px 20px;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #f7f7f7;
+    background-color: rgba(128, 128, 128, 0.1);
     color: #333;
     -moz-transition: all 0.5s ease-in-out 0s;
     -ms-transition: all 0.5s ease-in-out 0s;
@@ -37,7 +44,6 @@
 }
 
 #project .project-list .nav li:after {
-    content: "--";
     color: #000000;
     position: absolute;
     right: 0;
@@ -46,7 +52,6 @@
 }
 
 #project .project-list .nav li:before {
-    content: "--";
     color: #000000;
     position: absolute;
     left: 0;
@@ -57,7 +62,7 @@
 #project .project-list .nav li:hover,
 #project .project-list .nav li.filter-active {
     color: #ffffff;
-    background: #ea1538;
+    background: #2980B9;
     -moz-transition: all 0.5s ease-in-out 0s;
     -ms-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
@@ -66,11 +71,12 @@
 }
 
 #project .project-container {
-    margin-left: 10%;
+    margin-left: 15%;
     display: inline-block;
     width: 100%;
     text-align: center;
 }
+
 @media (max-width: 768px) {
     #project .project-container {
         margin-left: 0%;
@@ -104,7 +110,7 @@
     left: 5px;
     -webkit-transition: all .4s;
     transition: all .4s;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .project-item .project-img-overlay:before {
@@ -147,14 +153,14 @@
 
 .project-item .project-img-overlay:hover .project-content h4,
 .project-item .project-img-overlay:hover .project-content h6,
-.project-item .project-img-overlay:hover .project-content button {
+.project-item .project-img-overlay:hover .project-content .button {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
 }
 
 .project-item .project-img-overlay .project-content h4,
-.project-item .project-img-overlay .project-content button {
+.project-item .project-img-overlay .project-content .button {
     color: #333;
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -170,8 +176,28 @@
     transition: all .6s;
 }
 
+.button {
+    margin-top: 2rem;
+    padding: 0.2rem 1.5rem;
+    border: 2px solid #0099ff;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    backdrop-filter: blur(50px);
+}
+
+.button:hover {
+    background-color: #0099ff;
+    color: black;
+    
+}
+
 .project-item .project-img-overlay .project-content h6 {
-    color: #ea1538;
+    color: #0099ff;
     margin-top: 5px;
     font-size: 15px;
     letter-spacing: 0.9px;

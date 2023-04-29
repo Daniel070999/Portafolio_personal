@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="section-title">
-            <h2 class="text-center">Recent Project</h2>
+            <h2 class="text-center">Projects</h2>
           </div>
         </div>
       </div>
@@ -14,10 +14,13 @@
           <div class="project-list">
             <ul class="nav" id="project-flters">
               <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".branding">branding</li>
-              <li class="filter" data-filter=".application">application</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".photography">photography</li>
+              <li class="filter" data-filter=".movil">Movil</li>
+              <li class="filter" data-filter=".web">Web</li>
+              <li class="filter" data-filter=".java">Java</li>
+              <li class="filter" data-filter=".dart">Dart</li>
+              <li class="filter" data-filter=".kotlin">Kotlin</li>
+              <li class="filter" data-filter=".ts">TypeScript</li>
+              <li class="filter" data-filter=".js">JavaScript</li>
             </ul>
           </div>
         </div>
@@ -28,9 +31,9 @@
                 <img [src]="project.img" alt="img">
                 <div class="project-img-overlay">
                   <div class="project-content">
-                    <h4>Creative Design</h4>
-                    <h6>View Project</h6>
-                    <button>asd</button>
+                    <h6>{{project.title}}</h6>
+                    <h4>{{project.description}}</h4>
+                    <a [href]="project.link" class="button" [target]="project.link">Ver</a>
                   </div>
                 </div>
               </a>

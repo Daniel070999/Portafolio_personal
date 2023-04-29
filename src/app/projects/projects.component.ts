@@ -12,18 +12,24 @@ export class ProjectsComponent implements OnInit {
   projects: any = [
     {
       img: '../assets/images/projects/hdt.png',
-      type: 'application webdesign',
-      value: 10
+      type: 'movil dart',
+      title: 'Herramientas de Texto',
+      description: 'La aplicación cuenta con varias herramientas que de seguro te servirán',
+      link: 'https://play.google.com/store/apps/details?id=appht.danielpativas.herramientasdetexto&hl=es_EC&gl=US'
     },
     {
       img: '../assets/images/projects/cyd.jpg',
-      type: 'application webdesign',
-      value: 10
+      type: 'movil java',
+      title: 'Cobros y Deudas',
+      description: 'La aplicación ayuda con el correcto manejo de finanzas personales como pueden ser préstamos pequeños.',
+      link: 'https://play.google.com/store/apps/details?id=appcyb.danielpativas.cobrosydeudas&hl=es_EC&gl=US'
     },
     {
-      img: '../assets/images/projects/cyd.jpg',
-      type: 'application',
-      value: 10
+      img: '../assets/images/projects/cdm.png',
+      type: 'movil dart',
+      title: 'Carnet de Mascotas',
+      description: 'La aplicación te permite llevar un mejor control de registros de tu mascota',
+      link: 'https://play.google.com/store/apps/details?id=appccm.danielpativas.carnetdecontrolmascotas&hl=es_EC&gl=US'
     }
   ];
 
