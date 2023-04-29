@@ -1,5 +1,7 @@
 #project {
     position: relative;
+    justify-content: center;
+    place-content: center;
 }
 
 #project .project-list {
@@ -64,13 +66,22 @@
 }
 
 #project .project-container {
+    margin-left: 10%;
     display: inline-block;
     width: 100%;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #project .project-container {
+        margin-left: 0%;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .project-area .project-grid-item {
     overflow: hidden;
-
 }
 
 .project-grid-item img {
@@ -78,6 +89,7 @@
 }
 
 .project-item {
+
     position: relative;
     display: block;
     overflow: hidden;
@@ -134,8 +146,8 @@
 }
 
 .project-item .project-img-overlay:hover .project-content h4,
-.project-item .project-img-overlay:hover .project-content h6, 
-.project-item .project-img-overlay:hover .project-content button{
+.project-item .project-img-overlay:hover .project-content h6,
+.project-item .project-img-overlay:hover .project-content button {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;

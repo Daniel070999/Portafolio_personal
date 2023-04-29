@@ -9,21 +9,21 @@ import * as Isotope from 'isotope-layout';
 
 export class ProjectsComponent implements OnInit {
 
-  images: any = [
+  projects: any = [
     {
-      img: 'https://cutesolution.com/tf/maslin/light/assets/img/projects/work-6.jpg',
-      alt: 'webdesign',
+      img: '../assets/images/projects/hdt.png',
+      type: 'application webdesign',
       value: 10
     },
     {
-      img: 'https://example.com/image2.jpg',
-      alt: 'Descripción de la imagen 2',
-      value: 20
+      img: '../assets/images/projects/cyd.jpg',
+      type: 'application webdesign',
+      value: 10
     },
     {
-      img: 'https://example.com/image3.jpg',
-      alt: 'Descripción de la imagen 3',
-      value: 30
+      img: '../assets/images/projects/cyd.jpg',
+      type: 'application',
+      value: 10
     }
   ];
 
