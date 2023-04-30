@@ -8,14 +8,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { DescriptionComponent } from './description/description.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SplashScreenComponent } from './splash-screen/splash-screen.component'; 
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomePortafolioComponent },
-  { path: 'aboutme', component: AboutMeComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: '', component: HomePortafolioComponent }
 ]
 
 @NgModule({
@@ -33,8 +31,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes)
-    
+    RouterModule.forRoot(appRoutes, { useHash: true })
+
   ],
   providers: [],
   bootstrap: [AppComponent]

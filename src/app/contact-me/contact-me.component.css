@@ -12,7 +12,9 @@
 
 @media (max-width: 768px) {
     .contact-container {
-        background-image: url('https://i.pinimg.com/originals/35/12/20/35122059c3e877984bde3ff69467bb31.jpg');
+        background-image: url('../../assets/images/contactme2.jpeg');
+        display: block;
+        margin: 0 auto;
     }
 }
 
