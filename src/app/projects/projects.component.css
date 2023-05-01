@@ -94,7 +94,8 @@ h2 {
 }
 
 .project-grid-item img {
-    width: 100%;
+    max-width: 75%;
+    max-height: 70%;
 }
 
 .project-item {
@@ -157,7 +158,8 @@ h2 {
 
 .project-item .project-img-overlay:hover .project-content h4,
 .project-item .project-img-overlay:hover .project-content h6,
-.project-item .project-img-overlay:hover .project-content .button {
+.project-item .project-img-overlay:hover .project-content .button,
+.project-item .project-img-overlay:hover .project-content .codes {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
@@ -166,6 +168,22 @@ h2 {
 .project-item .project-img-overlay .project-content h4,
 .project-item .project-img-overlay .project-content .button {
     color: #333;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 0;
+    z-index: 7;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.project-item .project-img-overlay .project-content .codes {
+    color: #ff0303af;
     font-size: 16px;
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -199,6 +217,7 @@ h2 {
     color: black;
 
 }
+
 
 .project-item .project-img-overlay .project-content h6 {
     color: #0099ff;
