@@ -13,7 +13,7 @@ export class SplashScreenComponent implements OnInit {
       const splashScreen = document.getElementById('splash-screen');
       setTimeout(() => {
         splashScreen!.style.display = 'none';
-      }, 2000); // 2000ms = 2 segundos
+      }, 3000); // 2000ms = 2 segundos
     });
     //pre load
     window.addEventListener('load', function () {
@@ -26,7 +26,7 @@ export class SplashScreenComponent implements OnInit {
               $('#preloader-wapper').remove();
             }, 400);
           }, 600);
-        }, 1000);
+        }, 2000);
       }
       preLoader();
     });

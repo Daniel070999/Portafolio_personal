@@ -1,0 +1,26 @@
+<div class="body" data-aos="zoom-in-up">
+    <section class="skill-area section-padding">
+        <div class="container">
+            <h2 class="text-center">Expertises</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-6 skill-box" *ngFor="let expertise of expertises">
+                    <div class="skill-item">
+                        <div class="skill-info clearfix">
+                            <h4 class="float-left mb-3 mt-0">{{expertise.name}}</h4>
+                            <div class="span" style="margin-left: {{expertise.value}}%;">
+                                <span>{{expertise.value}}%</span>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                style="width: {{expertise.value}}%;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
