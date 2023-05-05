@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./dist/tienda_online",
+    "public": "./dist/portafolio_personal",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -12,6 +12,9 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
+import { LinesStyleComponent } from './lines-style/lines-style.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataPortafolioService } from './data-portafolio.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomePortafolioComponent }
@@ -27,16 +30,18 @@ const appRoutes: Routes = [
     NavbarComponent,
     SplashScreenComponent,
     ContactMeComponent,
-    ExpertiseComponent
+    ExpertiseComponent,
+    LinesStyleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes, { useHash: true })
+    RouterModule.forRoot(appRoutes, { useHash: true }),
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [DataPortafolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

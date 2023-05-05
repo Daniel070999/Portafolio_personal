@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataPortafolioService } from '../data-portafolio.service';
 
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css']
 })
-export class ContactMeComponent {
+export class ContactMeComponent implements OnInit {
+
+  constructor(private dataContactMe: DataPortafolioService) { }
+
+  data:any=[];
+
+  ngOnInit(): void {
+    this.dataContactMe.getData().subscribe(
+      response=>{
+        this.data=response;
+      }
+    );
+  }
 
   name = '';
   subject = '';
@@ -16,7 +29,7 @@ export class ContactMeComponent {
   enviar() {
     if (this.name && this.subject && this.message) {
       const mess = this.message + '\n\n Le saluda:' + this.name;
-      window.open(`mailto:danielixo99dev@gmail.com?subject=${this.subject}&body=${mess}`);
+      window.open(`mailto:${this.data.email}?subject=${this.subject}&body=${mess}`);
     } else {
       this.formSubmitted = true;
     }
