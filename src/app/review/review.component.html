@@ -1,0 +1,43 @@
+<div class="body" data-aos="zoom-in-up">
+    <h2 class="aboutme">Reviews</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div *ngFor="let review of listReviews.documents">
+                <div class="carousel-item  {{review.fields['activeEstatus'].stringValue}}" data-bs-interval="3500">
+                    <div class="card">
+                        <div class="row text-center">
+                            <div class="col text-center">
+                                <img src="{{review.fields['image'].stringValue}}" class="image" alt="...">
+                                <h6>{{review.fields['name'].stringValue}}</h6>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="container-row">
+                                        <img class="image-project" src="{{review.fields['projectImage'].stringValue}}"
+                                            alt="img">
+                                        <h4 class="card-title">{{review.fields['projectName'].stringValue}}</h4>
+                                    </div>
+
+                                    <hr>
+                                    <p style="font-style: italic;">"{{review.fields['review'].stringValue}}"</p>
+                                    <p class="card-text"><a href="{{review.fields['projectUrl'].stringValue}}"
+                                            target="{{review.fields['projectUrl'].stringValue}}">
+                                            View Project</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

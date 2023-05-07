@@ -1,5 +1,5 @@
 .contact-container {
-    background: url("../../assets/images/contactme.jpg");
+    background: url("../../assets/images/contactme.webp");
     background-size: cover;
     position: relative;
     display: flex;
@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
     .contact-container {
-        background-image: url('../../assets/images/contactme2.jpeg');
+        background-image: url('../../assets/images/contactme2.webp');
         display: block;
         margin: 0 auto;
     }

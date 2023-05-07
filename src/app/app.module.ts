@@ -15,6 +15,7 @@ import { ExpertiseComponent } from './expertise/expertise.component';
 import { LinesStyleComponent } from './lines-style/lines-style.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataPortafolioService } from './data-portafolio.service';
+import { ReviewComponent } from './review/review.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePortafolioComponent }
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     SplashScreenComponent,
     ContactMeComponent,
     ExpertiseComponent,
-    LinesStyleComponent
+    LinesStyleComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

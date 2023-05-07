@@ -41,6 +41,7 @@ h2 {
     -o-transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
+    border: 2px solid #297fb92c;
 }
 
 #project .project-list .nav li:after {
@@ -75,6 +76,7 @@ h2 {
     display: inline-block;
     width: 100%;
     text-align: center;
+
 }
 
 @media (max-width: 768px) {
@@ -115,6 +117,7 @@ h2 {
     transition: all .4s;
     border-radius: 10%;
     background-color: rgba(128, 128, 128, 0.1);
+    border: 3px inset rgba(255, 255, 255, 0.5);
 }
 
 .project-item .project-img-overlay:before {
@@ -232,4 +235,11 @@ h2 {
     z-index: 7;
     -webkit-transition: all .6s;
     transition: all .6s;
+}
+
+.aboutme {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
