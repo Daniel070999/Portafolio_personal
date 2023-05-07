@@ -39,16 +39,16 @@
 
         </div>
         <div class="project-container">
-          <a *ngFor="let project of projects">
-            <div class="col-lg-3 col-md-8 project-grid-item all {{project.type}}">
+          <a *ngFor="let project of projects.documents">
+            <div class="col-lg-3 col-md-8 project-grid-item all {{project.fields['type'].stringValue}}">
               <a class="popup-img project-item" data-aos="flip-right">
-                <img [src]="project.img" alt="img">
+                <img [src]="project.fields['img'].stringValue" alt="Image of {{project.fields['img'].stringValue}}">
                 <div class="project-img-overlay">
                   <div class="project-content">
-                    <h6>{{project.title}}</h6>
-                    <h4>{{project.description}}</h4>
-                    <p class="codes">{{project.code}}</p>
-                    <a [href]="project.link" class="button" [target]="project.link">Ver</a>
+                    <h6>{{project.fields['title'].stringValue}}</h6>
+                    <h4>{{project.fields['description'].stringValue}}</h4>
+                    <p class="codes">{{project.fields['code'].stringValue}}</p>
+                    <a [href]="project.fields['link'].stringValue" class="button" [target]="project.fields['link'].stringValue">Ver</a>
                   </div>
                 </div>
               </a>

@@ -8,14 +8,14 @@
                     <div class="card">
                         <div class="row text-center">
                             <div class="col text-center">
-                                <img src="{{review.fields['image'].stringValue}}" class="image" alt="...">
+                                <img src="{{review.fields['image'].stringValue}}" class="image" alt="Image of {{review.fields['name'].stringValue}}">
                                 <h6>{{review.fields['name'].stringValue}}</h6>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <div class="container-row">
                                         <img class="image-project" src="{{review.fields['projectImage'].stringValue}}"
-                                            alt="img">
+                                            alt="Image of {{review.fields['projectName'].stringValue}}">
                                         <h4 class="card-title">{{review.fields['projectName'].stringValue}}</h4>
                                     </div>
 

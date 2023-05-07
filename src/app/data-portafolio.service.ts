@@ -17,13 +17,17 @@ export class DataPortafolioService {
   * 
   */
   urlReviews = 'https://firestore.googleapis.com/v1beta1/projects/portafolio-ab468/databases/(default)/documents/reviews/';
+  urlProjects = 'https://firestore.googleapis.com/v1beta1/projects/portafolio-ab468/databases/(default)/documents/projects/';
 
   getData() {
     return this.http.get(this.urlMain);
   }
 
-
   getReviews() {
     return this.http.get(this.urlReviews);
+  } 
+  
+  getProjects() {
+    return this.http.get(this.urlProjects);
   }
 }
