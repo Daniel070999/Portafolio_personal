@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HomePortafolioComponent } from './home-portafolio/home-portafolio.component';
 import { FormsModule } from '@angular/forms';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     NgbModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
