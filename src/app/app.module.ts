@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import { LinesStyleComponent } from './lines-style/lines-style.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataPortafolioService } from './data-portafolio.service';
 import { ReviewComponent } from './review/review.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 const appRoutes: Routes = [
   { path: '', component: HomePortafolioComponent }
@@ -42,7 +43,13 @@ const appRoutes: Routes = [
     FormsModule,
     NgbModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
 
   ],
   providers: [DataPortafolioService],
