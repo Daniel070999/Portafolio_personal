@@ -1,8 +1,8 @@
 {
-  "name": "portafolio_personal",
-  "short_name": "portafolio_personal",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Portafolio Daniel Patiño",
+  "short_name": "Portafolio Daniel Patiño",
+  "theme_color": "#d1d1d1",
+  "background_color": "#212F3D",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
