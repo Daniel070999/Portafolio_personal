@@ -17,13 +17,12 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
 
+
     this.listProjects.getProjects().subscribe(
       response => {
-        this.projects = response;
-      }
-    );
+        this.projects = response; 
+        Aos.init();
 
-    Aos.init();
     $(window).on('load', function () {
       var projectIsotope = $('.project-container').isotope({
         itemSelector: '.project-grid-item'
@@ -38,6 +37,11 @@ export class ProjectsComponent implements OnInit {
         });
       });
     });
+
+      }
+    );
+
+    
   }
 
   showRepository() {
