@@ -20,7 +20,7 @@ import { ReviewComponent } from './review/review.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 const appRoutes: Routes = [
-  { path: '', component: HomePortafolioComponent }
+  { path: '', component: HomePortafolioComponent },
 ]
 
 @NgModule({
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes, { useHash: true }),
+    RouterModule.forRoot(appRoutes),
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
